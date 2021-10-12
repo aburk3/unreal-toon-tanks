@@ -26,5 +26,8 @@ class TOONTANKS_API ATank : public ABasePawn
 		UPROPERTY(VisibleAnywhere, Category = "Components")
 		class UCameraComponent* Camera;
 
+		UPROPERTY(EditAnywhere, Category = "Movement")
+		float Speed = 200.f;
+
 		void Move(float Value);
 };
